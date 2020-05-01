@@ -1,27 +1,10 @@
 {
 	"auth": {
-		"reactloginstackc19abf6f": {
+		"reactloginstack9cc9be92": {
 			"service": "Cognito",
 			"providerPlugin": "awscloudformation",
 			"dependsOn": [],
 			"customAuth": false
-		}
-	},
-	"api": {
-		"loginapi": {
-			"service": "AppSync",
-			"providerPlugin": "awscloudformation",
-			"output": {
-				"authConfig": {
-					"additionalAuthenticationProviders": [],
-					"defaultAuthentication": {
-						"authenticationType": "AMAZON_COGNITO_USER_POOLS",
-						"userPoolConfig": {
-							"userPoolId": "authreactloginstackc19abf6f"
-						}
-					}
-				}
-			}
 		}
 	}
 }
